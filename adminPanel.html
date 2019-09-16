@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!--Fontawesome css-->
+    <link rel="stylesheet" href="./css/all.css">
+    <!--Fontawesome js -->
+    <script src="./js/all.js"></script>
+    <!--main css-->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3" id="navbar">
+        <!-- navbar Links -->
+        <div class="" id="navbarLinks">
+            <ul class="navbar-nav">
+                <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/adminPanel.html" class="nav-item nav-link">admin panel</a>
+                <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/userPanel.html" class="nav-item nav-link">user panel</a>
+            </ul>
+        </div>
+        <!-- end of navbar Links -->
+    </nav>
+    <!-- end of navbar -->
+
+   <section id="contact" class="my-5">
+       <div class="container">
+           <div class="row py-3">
+                <div class="col text-center">
+                    <h1 class="text-uppercase text-dark mb-0">
+                        <strong>admin panel</strong>
+                    </h1>
+                </div>
+           </div>
+           <div class="row justify-content-center">
+                <div class="col-md-6 my-3">
+                    <div class="card card-body bg-secondary">
+                    <!-- title -->
+                    <div class="card-title text-center text-white">
+                        <h2 class="text-capitalize">create employee</h2>
+                    </div>
+                    <!-- end of title -->
+                    <form action ="" method = "">
+                        <!-- simple form -->
+                        <!-- firstName -->
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control form-control-lg" id="firstName" placeholder="enter first name">
+                        </div>
+                        <!-- lastName -->
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" id="lastName" placeholder="enter last name">
+                        </div>
+                        <div class="input-group my-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                            </div>
+                            <input type="tel" class="form-control" placeholder="phone number" id="phoneNumber">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" id="createSubmitButton" class="font-weight-bold btn btn-outline-dark btn-block text-uppercase mr-3">create user</button>
+                        </div>
+                    </form>
+                    <!-- end of form -->
+                </div>
+            </div>
+       </div>
+       <div class="row py-3">
+            <div class="col-6 py-3 border-right">
+                <h1 class="text-capitalize text-dark mb-0 text-center">
+                    <strong>list all employees</strong>
+                </h1>
+                <div class="text-center">
+                    <ul id="list-all-employees" class="p-3"></ul>
+                    <button type="submit" id="read-employees-button" class="font-weight-bold btn btn-outline-dark text-mute btn-lg m-2 text-capitalize">list employees</button>
+                </div>
+            </div>
+            <div class="col-6 bg- py-3">
+                <h1 class="text-capitalize text-center text-dark mb-0">
+                    <strong>list / delete employee</strong>
+                </h1>
+                <ul id="list-an-employee" class="p-3"></ul>
+                <div class="text-center">
+                    <input type="tel" class="form-control" placeholder="enter phone number" id="list-delete-number">
+                    <button type="submit" id="read-employee-button" class="font-weight-bold btn btn-outline-dark text-mute btn-lg m-2 text-capitalize">list employee</button>
+                    <button type="submit" id="delete-employee-button" class="font-weight-bold btn btn-outline-dark text-mute btn-lg m-2 text-capitalize">delete employee</button>
+                </div>
+                
+            </div>
+       </div>
+
+       </div> 
+   </section>
+
+    <!-- footer -->
+    <section id="footer" class="bg-dark pt-1">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <p>
+                        <div class="input-group my-3">
+                            <div id="footer-text" class="py-1 text-white">&copy; 2019, a Meeting Attendance System Designed by <strong id="footerExpression">Obieze Ezeugo Felistus</strong></div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of footer section -->
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
