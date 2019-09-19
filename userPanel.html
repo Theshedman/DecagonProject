@@ -7,27 +7,28 @@
     <title>User Panel</title>
 
     <!-- Bootstrap CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Fontawesome css-->
-    <link rel="stylesheet" href="./css/all.css">
-    <!--Fontawesome js -->
-    <script src="./js/all.js"></script>
+    <!-- <link rel="stylesheet" href="./fontawesome/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <!--main css-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3" id="navbar">
-        <!-- navbar Links -->
-        <div class="" id="navbarLinks">
-            <ul class="navbar-nav">
-                <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/adminPanel.html" class="nav-item nav-link">admin panel</a>
-                <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/userPanel.html" class="nav-item nav-link">user panel</a>
-            </ul>
-        </div>
-        <!-- end of navbar Links -->
-    </nav>
-    <!-- end of navbar -->
+        <!-- nav -->
+        <ul class="nav justify-content-start bg-dark nav-tabs">
+        <!-- logo -->
+            <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/adminPanel.html" class="navbar-brand text-uppercase font-weight-bold font-italic text-white px-5">meeting attendance</a>
+        <!-- end of logo -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/adminPanel.html">admin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/userPanel.html">user</a>
+            </li>
+        </ul>
+        <!-- end of nav-->
 
     <section id="user-form">
         <div class="col text-center mt-5 mb-5">
@@ -36,7 +37,7 @@
             </h1>
         </div>
         <div class="col-md-6 my-0 mx-auto">
-            <div class="card card-body bg-secondary">
+            <div class="card card-body form">
                 <!-- title -->
                 <div class="card-title text-center text-white">
                     <h2 class="text-capitalize">meeting attendance register</h2>
@@ -50,10 +51,10 @@
                                 <i class="fas fa-phone"></i>
                             </span>
                         </div>
-                        <input type="tel" class="form-control" placeholder="phone number" id="userPhoneNumber">
+                        <input type="tel" class="form-control" placeholder="enter phone number" id="userPhoneNumber" minlength="11" maxlength="11" required>
                     </div>
                     <div class="text-center">
-                        <button type="submit" id="markSubmitButton" class="font-weight-bold btn btn-outline-dark btn-block text-uppercase mr-3">mark attendance</button>
+                        <button type="submit" id="markSubmitButton" class="font-weight-bold btn btn-outline-dark btn-block text-white text-uppercase mr-3">mark attendance</button>
                     </div>
                 </form>
                 <!-- end of form -->
@@ -68,29 +69,22 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
+    <p>&nbsp;</p>
     <!-- end of no break space -->
 
 
     <!-- footer -->
-        <section id="footer" class="bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="">
-                        <p>
-                            <div class="input-group my-3">
-                                <div id="footer-text" class=" text-white">&copy; 2019, a Meeting Attendance System Designed by <strong id="footerExpression">Obieze Ezeugo Felistus</strong></div>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <section id="footer">
+            <div id="footer-text" class="text-center text-dark text-uppercase p-1"><strong>&copy; 2019, Meeting Attendance System </div>
         </section>
     <!-- end of footer section -->
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>

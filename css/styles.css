@@ -1,3 +1,39 @@
-.border-right{
-    border-right: 1px solid black !important;
+body{
+    background: whitesmoke;
+}
+.form{
+    background: #586f50;
+}
+.head{
+    background: #788B71;
+}
+.nav{
+    background: #586f50 !important;
+}
+.back{
+    background: #E5E8E3;
+}
+.nav-link{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#list-all-employees{
+    list-style: square inside url("../img/icon.png");
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+#list-an-employee{
+    list-style: none;
+    font-weight: bold;
+}
+.bg{
+    background: black;
+}
+.height{
+    max-height: 35vh;
+}
+#close-employees-list{
+    display: none;
 }
