@@ -8,111 +8,102 @@
     <title>Admin Panel</title>
 
     <!-- Bootstrap CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Fontawesome css-->
-    <link rel="stylesheet" href="./css/all.css">
-    <!--Fontawesome js -->
-    <script src="./js/all.js"></script>
+    <!-- <link rel="stylesheet" href="./fontawesome/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <!--main css-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3" id="navbar">
-        <!-- navbar Links -->
-        <div class="" id="navbarLinks">
-            <ul class="navbar-nav">
-                <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/adminPanel.html" class="nav-item nav-link">admin panel</a>
-                <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/userPanel.html" class="nav-item nav-link">user panel</a>
-            </ul>
-        </div>
-        <!-- end of navbar Links -->
-    </nav>
-    <!-- end of navbar -->
+   <!-- nav -->
+   <ul class="nav justify-content-start bg-dark nav-tabs">
+    <!-- logo -->
+       <a href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/adminPanel.html" class="navbar-brand text-uppercase font-weight-bold font-italic text-white px-5">meeting attendance</a>
+    <!-- end of logo -->
+        <li class="nav-item">
+            <a class="nav-link active" href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/adminPanel.html">admin</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="file:///C:/Users/Obi9/Desktop/Decagon%20Training/aSimpleAttendanceSystem/DecagonProject/userPanel.html">user</a>
+        </li>
+    </ul>
+    <!-- end of nav-->
 
-   <section id="contact" class="my-5">
+   <section id="contact" class="my-3">
        <div class="container">
-           <div class="row py-3">
+           <!-- title -->
+            <div class="row py-3">
                 <div class="col text-center">
                     <h1 class="text-uppercase text-dark mb-0">
                         <strong>admin panel</strong>
                     </h1>
                 </div>
-           </div>
-           <div class="row justify-content-center">
+            </div>
+            <!-- title end -->
+        <!-- form -->
+            <div class="row justify-content-center">
                 <div class="col-md-6 my-3">
-                    <div class="card card-body bg-secondary">
-                    <!-- title -->
-                    <div class="card-title text-center text-white">
-                        <h2 class="text-capitalize">create employee</h2>
-                    </div>
-                    <!-- end of title -->
-                    <form action ="" method = "">
-                        <!-- simple form -->
-                        <!-- firstName -->
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control form-control-lg" id="firstName" placeholder="enter first name">
+                    <div class="card card-body form">
+                        <!-- title -->
+                        <div class="card-title text-center text-white">
+                            <h2 class="text-capitalize">create employee</h2>
                         </div>
-                        <!-- lastName -->
+                        <!-- end of title -->
+                        <form action ="" method = "">
+                            <!-- firstName -->
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control form-control-lg" id="firstName" placeholder="enter first name" required>
+                            </div>
+                            <!-- lastName -->
                         <div class="form-group mt-3">
-                            <input type="text" class="form-control" id="lastName" placeholder="enter last name">
+                            <input type="text" class="form-control form-control-lg" id="lastName" placeholder="enter last name" required>
                         </div>
+                        <!-- phone number -->
                         <div class="input-group my-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
                                     <i class="fas fa-phone"></i>
-                                </span>
+                                    </span>
+                                </div>
+                                <input type="tel" class="form-control" placeholder="phone number" id="phoneNumber" minlength="11" maxlength="11" required>
                             </div>
-                            <input type="tel" class="form-control" placeholder="phone number" id="phoneNumber">
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" id="createSubmitButton" class="font-weight-bold btn btn-outline-dark btn-block text-uppercase mr-3">create user</button>
-                        </div>
-                    </form>
-                    <!-- end of form -->
+                            <div class="text-center">
+                                <button type="submit" id="createUserButton" class="font-weight-bold btn btn-outline-dark btn-block text-white text-uppercase mr-3">create user</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-       </div>
+           </div>
+<!-- end of form -->
+           <!-- next row -->
        <div class="row py-3">
-            <div class="col-6 py-3 border-right">
-                <h1 class="text-capitalize text-dark mb-0 text-center">
-                    <strong>list employees</strong>
-                </h1>
-                <div class="text-center">
-                    <ul id="list-all-employees" class="p-3"></ul>
-                    <button type="submit" id="read-employees-button" class="font-weight-bold btn btn-outline-dark text-mute btn-lg m-2 text-capitalize">list employees</button>
+            <div class="card col-md-5 mx-auto back my-2">
+                <h5 class="card-header text-uppercase text-dark head"><strong>view employees</strong></h5>
+                <div class="card-body">
+                    <ul id="list-all-employees" class="list-group"></ul>
+                    <button type="submit" id="list-employees-button" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">view</button>
+                    <button type="submit" id="close-employees-list" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">close</button>
                 </div>
             </div>
-            <div class="col-6 bg- py-3">
-                <h1 class="text-capitalize text-center text-dark mb-0">
-                    <strong>list / delete employee</strong>
-                </h1>
-                <ul id="list-an-employee" class="p-3"></ul>
-                <div class="text-center">
-                    <input type="tel" class="form-control" placeholder="enter phone number" id="list-delete-number">
-                    <button type="submit" id="read-employee-button" class="font-weight-bold btn btn-outline-dark text-mute btn-lg m-2 text-capitalize">list employee</button>
-                    <button type="submit" id="delete-employee-button" class="font-weight-bold btn btn-outline-dark text-mute btn-lg m-2 text-capitalize">delete employee</button>
-                </div>
-                
-            </div>
-       </div>
-
-       </div> 
-   </section>
-
-    <!-- footer -->
-    <section id="footer" class="bg-dark pt-1">
-        <div class="container">
-            <div class="row">
-                <div class="">
-                    <p>
-                        <div class="input-group my-3">
-                            <div id="footer-text" class="py-1 text-white">&copy; 2019, a Meeting Attendance System Designed by <strong id="footerExpression">Obieze Ezeugo Felistus</strong></div>
-                        </div>
-                    </p>
+            <div class="card col-md-5 mx-auto height  back">
+                <h5 class="card-header text-uppercase text-dark head"><strong>view / delete employee</strong></h5>
+                <div class="card-body">
+                    <ul id="list-an-employee" class="list-group py-1"></ul>
+                    <input type="tel" class="form-control mt-0" placeholder="enter phone number" minlength="11" maxlength="11" id="employee-ID">
+                    <button type="submit" id="list-one-employee" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">view</button>
+                    <button type="submit" id="delete-employee-button" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">delete</button>
                 </div>
             </div>
         </div>
+       </div> 
+<!-- container ends -->
+   </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <div id="footer-text" class="text-center text-dark text-uppercase p-2"><strong>&copy; 2019, Meeting Attendance System </div>
     </section>
     <!-- end of footer section -->
     
@@ -120,7 +111,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
