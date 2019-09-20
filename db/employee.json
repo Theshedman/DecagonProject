@@ -8,18 +8,60 @@
       "id": 1
     },
     {
-      "firstName": "BRYAN",
-      "lastName": "DAVIDS",
-      "phoneNumber": "07060858400",
-      "attendanceCount": "0",
-      "id": 2
-    },
-    {
       "firstName": "LAMINA",
       "lastName": "DIMEJI",
-      "phoneNumber": "07060858401",
+      "phoneNumber": "07060858402",
       "attendanceCount": "1",
       "id": 3
+    },
+    {
+      "firstName": "BERNARD",
+      "lastName": "BEN",
+      "phoneNumber": "07060858439",
+      "attendanceCount": "0",
+      "id": 4
+    },
+    {
+      "firstName": "PHILIPS",
+      "lastName": "BOLA",
+      "phoneNumber": "07060858468",
+      "attendanceCount": "0",
+      "id": 5
+    },
+    {
+      "firstName": "MERCEDES",
+      "lastName": "ONYEMA",
+      "phoneNumber": "07060858421",
+      "attendanceCount": "2",
+      "id": 6
+    },
+    {
+      "firstName": "DANJUMA",
+      "lastName": "IKECHUKWU",
+      "phoneNumber": "07060858422",
+      "attendanceCount": "0",
+      "id": 7
+    },
+    {
+      "firstName": "GIDEON",
+      "lastName": "OBINNA",
+      "phoneNumber": "08060858438",
+      "attendanceCount": "0",
+      "id": 8
+    },
+    {
+      "firstName": "BRENDA",
+      "lastName": "OBINNA",
+      "phoneNumber": "08060858382",
+      "attendanceCount": "0",
+      "id": 9
+    },
+    {
+      "firstName": "BRENDA ",
+      "lastName": "KELLOGS",
+      "phoneNumber": "07063840227",
+      "attendanceCount": "0",
+      "id": 10
     }
   ]
 }

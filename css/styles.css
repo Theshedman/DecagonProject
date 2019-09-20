@@ -37,3 +37,11 @@ body{
 #close-employees-list{
     display: none;
 }
+.shrink{
+    color: white;
+    background: #586f50;
+}
+.shrink, .shrink:hover, .shrink:active, .shrink:visited, .shrink:focus {
+    text-decoration:none;
+    color: white;
+}

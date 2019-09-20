@@ -8,10 +8,10 @@
     <title>Admin Panel</title>
 
     <!-- Bootstrap CSS -->
-    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Fontawesome css-->
-    <!-- <link rel="stylesheet" href="./fontawesome/css/all.css"> -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <!--main css-->
     <link rel="stylesheet" href="./css/styles.css">
@@ -77,26 +77,40 @@
                 </div>
            </div>
 <!-- end of form -->
-           <!-- next row -->
-       <div class="row py-3">
-            <div class="card col-md-5 mx-auto back my-2">
-                <h5 class="card-header text-uppercase text-dark head"><strong>view employees</strong></h5>
-                <div class="card-body">
-                    <ul id="list-all-employees" class="list-group"></ul>
-                    <button type="submit" id="list-employees-button" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">view</button>
-                    <button type="submit" id="close-employees-list" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">close</button>
+<!-- next row -->
+            <div id="accordion">
+                <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-capitalize font-weight-bold shrink" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        display more tasks...
+                    </button>
+                    </h5>
                 </div>
-            </div>
-            <div class="card col-md-5 mx-auto height  back">
-                <h5 class="card-header text-uppercase text-dark head"><strong>view / delete employee</strong></h5>
-                <div class="card-body">
-                    <ul id="list-an-employee" class="list-group py-1"></ul>
-                    <input type="tel" class="form-control mt-0" placeholder="enter phone number" minlength="11" maxlength="11" id="employee-ID">
-                    <button type="submit" id="list-one-employee" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">view</button>
-                    <button type="submit" id="delete-employee-button" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">delete</button>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="row py-3">
+                        <div class="card col-md-5 mx-auto back my-2">
+                            <h5 class="card-header text-uppercase text-dark head"><strong>view employees</strong></h5>
+                            <div class="card-body">
+                                <ul id="list-all-employees" class="list-group"></ul>
+                                <button type="submit" id="list-employees-button" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">view</button>
+                                <button type="submit" id="close-employees-list" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">close</button>
+                            </div>
+                        </div>
+                        <div class="card col-md-5 mx-auto height  back">
+                            <h5 class="card-header text-uppercase text-dark head"><strong>view / delete employee</strong></h5>
+                            <div class="card-body">
+                                <ul id="list-an-employee" class="list-group py-1"></ul>
+                                <input type="tel" class="form-control mt-0" placeholder="enter phone number" minlength="11" maxlength="11" id="employee-ID">
+                                <button type="submit" id="list-one-employee" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">view</button>
+                                <button type="submit" id="delete-employee-button" class="font-weight-bold btn btn-outline-dark text-mute m-2 text-capitalize">delete</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+                </div>
+            </div>      
+<!--end of next row  -->
        </div> 
 <!-- container ends -->
    </section>
@@ -111,7 +125,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>

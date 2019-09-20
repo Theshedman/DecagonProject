@@ -15,11 +15,18 @@ $(document).ready(() => {
             phoneNumber: number,
             attendanceCount: count
         };
-        if((capFirst === "") || (capLast === "") || (number === "")){
+        if((capFirst === "") || (capLast === "") || (number === "" && number.length !== 11)){
             alert("Please fill all fields appropriately");
         } else{
-            $.post("http://localhost:3000/users", info, alert("User successfully created"));
-            location.reload(true);
+            $.get(`http://localhost:3000/users/?phoneNumber=${number}`, (data)=> { 
+                if(data.length !== 0){ console.log(data);
+                    return alert("User already exists");
+                }
+                else{
+                    $.post("http://localhost:3000/users", info, alert("User successfully created"));
+                    location.reload(true);
+                }
+            });
         }
     });
 // end of create new employee
